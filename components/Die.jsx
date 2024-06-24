@@ -4,7 +4,7 @@ function Die({ id, value, isHeld, holdDice }) {
   };
 
   return (
-    <div className="die-face" style={style} onClick={() => holdDice(id)}>
+    <div className="die-face" style={style} onClick={holdDice}>
       {value}
     </div>
   );
